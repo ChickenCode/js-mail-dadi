@@ -19,3 +19,10 @@ else if (facciaRandomPlayer > facciaRandomAi) {
 else {
     console.log("Abbiamo un pareggio... su, riprova.")
 }
+
+
+
+
+
+
+
