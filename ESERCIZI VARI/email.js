@@ -1,37 +1,18 @@
-let listedMail = []
+let email = ["a@gmail.com", "b@gmail.com", "c@gmail.com"];
 
-let userEmail = prompt("Inserisci la tua eMail per eseguire il login")
+let userMail = prompt("Inserisci la tua mail qui");
+let verification = 0
 
-if (listedMail.includes(userEmail)) {
-    console.log("Benvenuto a bordo, caro")
+for (i = 0; i < email.length; i++) {
+    if (userMail === email[i]) {
+        verification += 1
+    }
+}
+
+if (verification == 1) {
+    console.log("Email riconosciuta! Benvenuto")
 }
 
 else {
-    alert("La tua mail non è registrata")
-    var insertMail = prompt("Se desideri registrarla, inserisci la tua mail qua sotto. Altrimenti semplicemente digita: no")
-
-        
-        if (insertMail.toLocaleLowerCase() === "no") {
-            alert("OK, ALLORA SMAMMA")
-        }
-
-        else if (insertMail.includes("@") && insertMail.includes(".")) {
-            listedMail.push(insertMail)
-            alert("Complimenti, la tua mail è stata registrata")
-            
-            let userEmail = prompt("Inserisci la tua eMail per eseguire il login")
-            console.log(userEmail)
-
-            if (!(listedMail.includes(userEmail))) {
-                alert("CI HAI PROVATO... SMAMMA MAMMALUCCO")
-            }
-            
-            else {
-                alert("Benvenuto a bordo, caro")
-            }
-        }
-
-        else {
-            alert("Email non valida. Ricarica e riprova.")
-        }
+    console.log("Email non riconosciuta! Ricarica e riprova")
 }
