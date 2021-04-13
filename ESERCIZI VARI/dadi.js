@@ -9,7 +9,7 @@ console.log("Il punteggio del computer è " + facciaRandomAi)
 
 //stampo il risultato
 if (facciaRandomPlayer < facciaRandomAi) {
-    console.log("Hai perso... SCHIAPPA!")
+    console.log("Hai perso... riprova!")
 }
 
 else if (facciaRandomPlayer > facciaRandomAi) {
